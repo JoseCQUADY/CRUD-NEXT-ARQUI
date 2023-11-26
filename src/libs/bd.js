@@ -1,6 +1,6 @@
 import mysql from "serverless-mysql";
 
-export const pool = mysql({
+export const conn = mysql({
     config: {
         host: 'localhost',
         user: 'root',
@@ -8,5 +8,4 @@ export const pool = mysql({
         port: 3306,
         database: 'nextjscrud'
     }
-
 })
